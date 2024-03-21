@@ -1,0 +1,36 @@
+<div class="flex flex-col justify-center items-center mt5">
+<img  class="mt-5"src="../../../assets/etudiants.jpeg">
+<div style="width:100%;"class="mt-5 w-100 border border-red-700">
+    <h2 class="text-3xl text-center  p-6">Liste des étudiants</h2>
+</div>
+<!-- END: ed8c6549bwf9 -->
+
+<table class="table-auto mt-6">
+    <thead>
+        <tr>
+            <th class="border bg-red-100 px-4 py-2">Nom</th>
+            <th class="border bg-red-100 px-4 py-2">Prénom</th>
+            <th class="border bg-red-100 px-4 py-2">Rue</th>
+            <th class="border bg-red-100 px-4 py-2">Code Postal</th>
+            <th class="border bg-red-100 px-4 py-2">Ville</th>
+            <th class="border bg-red-100 px-4 py-2">Mail</th>
+            <th class="border bg-red-100 px-4 py-2">Genre</th>
+            <th class="border bg-red-100 px-4 py-2">Age</th>
+            <th class="border bg-red-100 px-4 py-2">Id_Candidat</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let etudiant of etudiants" class="bg-gray-100">
+            <td class="border px-4 py-2">{{ etudiant._nom }}</td>
+            <td class="border px-4 py-2">{{ etudiant._prenom }}</td>
+            <td class="border px-4 py-2">{{ etudiant._rue}}</td>
+            <td class="border px-4 py-2">{{ etudiant._cp}}</td>
+            <td class="border px-4 py-2">{{ etudiant._ville}}</td>
+            <td class="border px-4 py-2">{{ etudiant._courriel}}</td>
+            <td class="border px-4 py-2">{{ etudiant._genre}}</td>
+            <td class="border px-4 py-2">{{ etudiant._age}}</td>
+            <td class="border px-4 py-2">{{ etudiant._idCand}}</td>
+        </tr>
+    </tbody>
+</table>
+</div>

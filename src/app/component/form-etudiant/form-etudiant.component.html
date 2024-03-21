@@ -1,0 +1,53 @@
+<form [formGroup]="etudiantForm" (ngSubmit)="onSubmit()" class="max-w-md mx-auto bg-red-100 p-6 rounded-sm mt-5">
+    <h2 class="text-xl text-center p-4">Ajouter un étudiant</h2>
+    <div class="mb-4 flex">
+        <div class="w-1/2 mr-2">
+            <label class="block">Nom</label>
+            <input type="text" formControlName="_nom" class="border border-gray-300 rounded-md px-3 py-2 w-full">
+        </div>
+        <div class="w-1/2 ml-2">
+            <label class="block">Prénom</label>
+            <input type="text" formControlName="_prenom" class="border border-gray-300 rounded-md px-3 py-2 w-full">
+        </div>
+    </div>
+    
+        <div class="mb-4">
+            <label class="block">Rue</label>
+            <input type="text" formControlName="_rue" class="border border-gray-300 rounded-md px-3 py-2 w-full">
+        </div>
+    
+        <div class="mb-4">
+            <label class="block">Code Postal</label>
+            <input type="text" formControlName="_cp" class="border border-gray-300 rounded-md px-3 py-2 w-full">
+        </div>
+    
+        <div class="mb-4">
+            <label class="block">Ville</label>
+            <input type="text" formControlName="_ville" class="border border-gray-300 rounded-md px-3 py-2 w-full">
+        </div>
+    
+        <div class="mb-4">
+            <label class="block">Courriel</label>
+            <input type="email" formControlName="_courriel" class="border border-gray-300 rounded-md px-3 py-2 w-full">
+        </div>
+    
+        <div class="mb-4">
+            <label class="block">Genre</label>
+            <select formControlName="_genre" class="border border-gray-300 rounded-md px-3 py-2 w-full">
+                <option value="Homme">Homme</option>
+                <option value="Femme">Femme</option>
+            </select>
+        </div>
+    
+        <div class="mb-4">
+            <label class="block">Age</label>
+            <input type="number" formControlName="_age" class="border border-gray-300 rounded-md px-3 py-2 w-full">
+        </div>
+    
+        <div class="mb-4">
+            <label class="block">ID Candidat</label>
+            <input type="text" formControlName="_idCand" class="border border-gray-300 rounded-md px-3 py-2 w-full">
+        </div>
+    
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 w-100 rounded">Ajouter</button>
+    </form>
